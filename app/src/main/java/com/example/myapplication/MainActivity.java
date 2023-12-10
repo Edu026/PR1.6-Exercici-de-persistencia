@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                         FileOutputStream fos = openFileOutput("contactes.txt", Context.MODE_APPEND);
 
                         // Escriu els valors dels TextInput en l'arxiu
-                        fos.write(( nom + ";" + cognom + ";" + telefon + ";" + email).getBytes());
+                        fos.write(( nom + ";" + cognom + ";" + telefon + ";" + email + "\n").getBytes());
 
                         // Tanca l'arxiu
                         fos.close();
